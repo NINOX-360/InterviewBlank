@@ -43,6 +43,11 @@ dependencies {
 
 tasks.getByName<Test>("test") { useJUnitPlatform() }
 
+tasks.create<JavaExec>("RunHelloWorld") {
+    main = "HelloWord"
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
 tasks.wrapper {
     distributionType = Wrapper.DistributionType.ALL
     gradleVersion = "7.3.3"
