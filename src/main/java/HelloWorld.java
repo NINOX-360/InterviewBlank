@@ -1,7 +1,7 @@
 /**
  * Simple class to get you started.
  */
-public class HelloWord {
+public class HelloWorld {
     /**
      * Function the always returns the number 5.
      */
@@ -10,7 +10,7 @@ public class HelloWord {
     }
 
     public static void main(String[] args) {
-        var app = new HelloWord();
+        var app = new HelloWorld();
         System.out.println("What does it return? " + app.returnsOnlyFive());
     }
 }
